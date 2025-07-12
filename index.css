@@ -1,0 +1,44 @@
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 90vh;
+	/* overflow: hidden; */
+	margin: 100px;
+}
+
+#personal_info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 15vh;
+}
+
+#personal_info p {
+	padding-bottom: 20px;
+}
+#project_panels {
+	display: flex;
+	width: 90vw;
+}
+.project_container {
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	height: 80vh;
+	border-radius: 10px;
+	color: white;
+	cursor: pointer;
+	flex: 0.5;
+	margin: 2px;
+	position: relative;
+	transition: flex 0.5 ease-in;
+}
+
+.project_info h3 {
+	font-size: 24px;
+}
+.project_info {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+}
