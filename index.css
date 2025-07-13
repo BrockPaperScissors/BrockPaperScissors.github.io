@@ -21,6 +21,17 @@ body {
 	display: flex;
 	width: 90vw;
 }
+
+#extended_project_info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#extended_project_info p {
+	margin: 0;
+}
 .project_container {
 	background-size: auto 100%;
 	background-repeat: no-repeat;
@@ -34,11 +45,45 @@ body {
 	transition: flex 0.5 ease-in;
 }
 
+#container_1 {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
 .project_info h3 {
 	font-size: 24px;
+	opacity: 0;
 }
 .project_info {
 	position: absolute;
 	bottom: 20px;
 	left: 20px;
+	/* opacity: 0; */
 }
+
+.info_container {
+	opacity: 0;
+}
+
+.active_container {
+	flex: 5;
+}
+
+.active_container h3 {
+	opacity: 1;
+	transition: opacity 0.1s ease-in 0.1s;
+}
+.active_container div {
+	opacity: 1;
+	transition: opacity 0.1s ease-in 0.1s;
+}
+
+.active_info {
+	display: block;
+}
+
+/* .active_info h3 {
+	opacity: 1;
+	transition: opacity 0.1s ease-in 0.2s;
+} */
