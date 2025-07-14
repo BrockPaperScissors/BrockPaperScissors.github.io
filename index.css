@@ -3,8 +3,35 @@ body {
 	align-items: center;
 	justify-content: center;
 	height: 90vh;
-	/* overflow: hidden; */
 	margin: 100px;
+}
+
+header {
+	display: flex;
+	width: 80vw;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+header p {
+	margin: 0px;
+	margin-bottom: 50px;
+	font-size: 24px;
+	text-align: left;
+}
+
+h1 {
+	font-size: 3.5rem;
+	margin-bottom: 5px;
+	text-decoration-line: underline;
+}
+
+#content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 #personal_info {
@@ -32,6 +59,10 @@ body {
 #extended_project_info p {
 	margin: 0;
 }
+
+#page_bottom {
+	height: 20px;
+}
 .project_container {
 	background-size: auto 100%;
 	background-repeat: no-repeat;
@@ -52,18 +83,30 @@ body {
 }
 
 .project_info h3 {
-	font-size: 24px;
+	font-size: 48px;
+	text-shadow: 2px 2px 4px black;
+	background-color: rgba(0, 0, 0, 0.8);
+	margin: 0px;
+	border-radius: 10px;
 	opacity: 0;
 }
 .project_info {
 	position: absolute;
 	bottom: 20px;
 	left: 20px;
-	/* opacity: 0; */
 }
 
 .info_container {
 	opacity: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	border-radius: 10px;
+}
+
+.inner_text {
+	font-size: 24px;
+	font-weight: 100;
+	text-shadow: 2px 2px 4px black;
+	margin: 0px;
 }
 
 .active_container {
@@ -79,6 +122,10 @@ body {
 	transition: opacity 0.1s ease-in 0.1s;
 }
 
+.active_container p {
+	margin-bottom: 20px;
+}
+
 .active_info {
 	display: block;
 }
@@ -87,3 +134,11 @@ body {
 	opacity: 1;
 	transition: opacity 0.1s ease-in 0.2s;
 } */
+
+.noto-sans {
+	font-family: "Noto Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings: "wdth" 100;
+}
